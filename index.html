@@ -16,22 +16,17 @@
           function show(shown) {
             var pages = ["home", "about", "projects", "intern", "resume", "reflections", "contact"]; 
             document.getElementById(shown).style.display='block';
-              console.log("Showing...."+shown);
+            document.getElementById('navbarsExampleDefault').style.display='none';
               for(let i in pages) {
                if(pages[i]!=shown) {
                    document.getElementById(pages[i]).style.display='none';
-                   console.log("Hiding....."+pages[i]);
                 }
               }
             return false;
           }
-              $(function () {
-                var nua = navigator.userAgent
-                var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
-                if (isAndroid) {
-                    $('select.form-control').removeClass('form-control').css('width', '100%')
-                }
-                })
+          function showNavBar() {
+              document.getElementById('navbarsExampleDefault').style.display='block';
+          }
       </script>
   </head>
 
@@ -39,7 +34,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top">
 <!--      <a class="navbar-brand" href="#">MS</a>-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" onclick="showNavBar()" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
