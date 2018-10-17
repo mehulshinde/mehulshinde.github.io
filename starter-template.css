@@ -7,13 +7,28 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-h1, h4 {
+h1, h6 {
     color: white;
 }
 
-p{
+h4 {
+    color: white;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 80%;
+}
+
+p, li {
     color: white;
 }
+
+.tech {
+    color: white;
+    font-family: 'Source Code Pro', sans-serif;    
+}
+
 .bg-black {
     background-color: black;
 }
