@@ -7,7 +7,7 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
-h1, h6 {
+h1 {
     color: white;
 }
 
@@ -17,6 +17,7 @@ h4 {
 }
 
 h6 {
+    color: white;
     font-size: 80%;
 }
 
@@ -39,9 +40,16 @@ p, li {
 }
 
 .cover-text {
-    display:block;
+    display: block;
 }
 
 .about-img {
     display: inline-block;
+}
+
+.contact-info {
+    width: 50%;
+    display: inline-block;
+    color: white;
+    text-align: center;
 }
