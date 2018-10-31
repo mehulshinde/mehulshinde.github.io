@@ -53,3 +53,11 @@ p, li {
     color: white;
     text-align: center;
 }
+
+.project {
+    display: inline-block;
+}
+
+.project-img {
+    padding: 1%;
+}
