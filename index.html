@@ -79,8 +79,7 @@
             </div>
             <div class="starter-template cover-text">
                 <h1 class="heading"><br />I'm Mehul Shinde.</h1>
-                <p class="lead">A Computer Engineering student at Iowa State University experienced in
-                    software-development and undergraduate research.<br /></p>
+                <p class="lead">A Computer Engineer driven by innovative ideas and tech in general.<br /></p>
             </div>
         </div>
         <!-- About Page -->
@@ -222,10 +221,53 @@
                 CyDrone 
             </h4>
             <h6>Senior Design Project, Team Lead</h6>
-            <p class="tech">C, C++, ROS, WebODM & ReactJS</p>
-            <p>Currently working on Web Portal that provides the user with the ability to simulate a drone or control a real drone in an environment generated from 
-                previous flights (computer vision).
-                The client currently has a drone which uses an Nvidia GPU and a camera. The drone also has a hotspot built into it and can be connected remotely via command prompt interfaces such as SSH. Our task is to create a web portal system which can visually depict a simulation and control the drone. In addition, the application is also responsible to create a digital version of the real-life environment using computer vision.
+            <p class="tech">C, C++, ROS, WebODM, Python, Blender & ReactJS</p>
+                <p>Problem Statement:<br>
+                    The client wanted an open-source web-application to simulate and control a drone with an ability to create a virtual simulation environment based on the real environment of the drone. 
+                    <br> Solution: <br>
+                    <ul>
+                        <li>A web-application simulator based on AngularJS and Gazebo</li>
+                        <li>A drone embedded with Raspberry Pi running ROS and a camera</li>
+                        <li>A computer vision module to generate a virtual model using ODM and Blender/Python</li>
+                    </ul>
+                    <p><br>Implementation:<br>
+                        <img src="concept.png" style="padding-right: 0%;" class="float-right project-img" width=500 height=300 alt="Responsive image">
+                    Following are the individual modules of the project listed with implemented technologies:<br></p>
+                    <ul>
+                        <li>Django app (Python, JavaScript)
+                            <ul>
+                                <li>Serves web frontend (React), handles user requests, and starts simulations</li>
+                                <li>Serves web frontend (React), handles user requests, and starts simulations</li>
+                            </ul>
+                        </li>
+                        <li>GzWeb container (primarily C++)
+                            <ul>
+                                <li>Gazebo runs the simulation itself, with the loaded simulation environment and flight physics. GzServer and Node server relay the simulation to the web client.</li>
+                                <li>ArduPilot handles piloting the drone and plotting flight paths</li>
+                            </ul>
+                        </li>
+                        <li> Computer vision module (Python)
+                            <ul>
+                                <li>Open Drone Mapping (ODM) service creates an environment model</li>
+                                <li>Blender, Gazebo Simulation Depiction Format (SDF)</li>
+                            </ul>
+                        </li>
+                        <li> Raspberry Pi used for drone control (C++)
+                            <ul>
+                                <li>Communicates with APM planner and Flight Control Unit (PXFmini) using MAVlink</li>
+                                <li>Runs Robot Operating System (ROS)</li>
+                            </ul>
+                        </li>
+                        <li> Raspberry Pi used for image processing (Python)
+                            <ul>
+                                <li>Livestreams video from the drone</li>
+                                <li>Geo-tags the images taken by it for image stitching purposes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                        <img src="drone1.jpg" class="img-fluid float-left project-img" alt="Responsive image" height="50%" width="40%">
                 <br>My Role:<br>
                 I act as the team lead for this project.
                 The team is divided in three sub-groups with each sub-group responsible for development in either simulation, control or the computer vision aspect of the application. The team is following Agile methodology to deliver this project. Some of the core technologies on which the application will be built are: ReactJS and Gazebo to run the controls and simulation, ROS as an interface between the application and the drone 
@@ -243,6 +285,16 @@
             <h1 class="heading">
                 Professional Experience
             </h1><br>
+            <h4>
+                    Application Developer, College of Veterinary Medicine, Iowa State University                    
+                </h4>
+                <h6>Ames, IA</h6>
+                <h6>February 2019 - May 2019.</h6>
+                <ul>
+                    <li>Developed and deployed a cross-platform mobile app for students studying Canine Anatomy.</li>
+                    <li>Implemented file caching and storage system to cache files and interactive modules.</li>
+                </ul>
+                <p class="tech">TypeScript, AngularJS, Ionic, HTML, AJAX, jQuery & CSS.</p>
             <h4>
                 Information Technology Intern, Farm Bureau Financial Services. 
             </h4>
